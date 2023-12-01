@@ -10,6 +10,7 @@ elif argc == 1:
 else:
     print("{:d} arguments:".format(argc))
 
-for idx, arg in enumerate(arguments, start=1):
-    print("{:d}: {:s}".format(idx, arg))
-
+count = 1
+for arg in arguments:
+    print("{:d}: {:s}".format(count, arg))
+    count += 1

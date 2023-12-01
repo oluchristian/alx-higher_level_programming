@@ -7,5 +7,5 @@ if __name__ != "__main__":
     exit()
 for num in commands:
     total += int(num)
-print("{:d}".format(num))
+print("{:d}".format(total))
 

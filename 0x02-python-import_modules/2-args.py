@@ -13,5 +13,4 @@ if __name__ == "__main__":
         for args in arguements:
             if args != arguements[0]:
                 print("{}: {}".format(count, args))
-                count += 1
-    
+                count += 1 

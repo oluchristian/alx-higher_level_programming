@@ -8,4 +8,3 @@ if __name__ != "__main__":
 for num in commands:
     total += int(num)
 print("{:d}".format(total))
-

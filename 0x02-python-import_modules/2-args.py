@@ -1,17 +1,15 @@
 import sys
-arguements = sys.argv[1:]
-argc = len(arguements)
-string = "{:d} argument"
-count = 1
-if __name__ != "__main__":
-    exit()
+
+arguments = sys.argv[1:]
+argc = len(arguments)
+
 if argc == 0:
-    string += 's.'
+    print("0 arguments.")
 elif argc == 1:
-    string += ':'
-elif argc > 1:
-    string += 's:'
-print(string.format(argc))
-for args in arguements:
-    print("{:d}: {:s}".format(count, args))
-    count += 1
+    print("1 argument:")
+else:
+    print("{:d} arguments:".format(argc))
+
+for idx, arg in enumerate(arguments, start=1):
+    print("{:d}: {:s}".format(idx, arg))
+

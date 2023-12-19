@@ -3,4 +3,5 @@
 
 
 class Square:
+    """Class that defines props of a square"""
     pass

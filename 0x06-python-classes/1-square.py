@@ -11,7 +11,6 @@ class Square():
     def __init__(self, size):
         """
         Initializes a Square instance.
-        
         Args:
             size: size of the square.
         """

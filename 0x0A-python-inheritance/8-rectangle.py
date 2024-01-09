@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """empty class"""
 
+""" Define Geometry module """
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-class Rectangle:
+
+class Rectangle(BaseGeometry):
     """Rectangle class"""
     def __init__(self, width, height):
         super().integer_validator("width", width)

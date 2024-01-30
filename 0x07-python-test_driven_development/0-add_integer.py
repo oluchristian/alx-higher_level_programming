@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
 This is the add_integer module has a add func
+that adds two integers together and also has a
+doc test file
 """
 
 

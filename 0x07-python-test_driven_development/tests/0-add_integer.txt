@@ -1,0 +1,46 @@
+This is a test file to test the ``add_integer`` module
+
+Import the ``add_integer`` module
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Tesing for regular addition
+	>>> add_integer(1, 2)
+	3
+
+Test case with negative integers
+	>>> add_integer(-3, 5)
+	2
+
+Test case with zero as one of the arguements
+	>>> add_integer(0, 5)
+	5
+
+Test case with both arguements being zero
+	>>> add_integer(0, 0)
+	0
+
+Test case with float and an integer
+	>>> add_integer(2.5, 3)
+	5
+
+Test case with both arguements being floats
+	>>> add_integer(1.5, 2.5)
+	3
+
+# Test case with a negative float and an integer
+	>>> add_integer(-2.8, 4)
+	2
+
+Test case with a float and a negative integer
+	>>> add_integer(2, -3.2)
+	-1
+
+# Test case with a float and a negative integer
+	>>> add_integer(2, -3.2)
+	-1
+
+Tesing for addition between string and int
+	>>> add_integer('a', 2)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+

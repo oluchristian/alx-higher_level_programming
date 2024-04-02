@@ -5,5 +5,5 @@ import sys
 if __name__ == "__main__":
     req = urllib.request.Request(sys.argv[1])
     with urllib.request.urlopen(req) as request:
-        info = request.info()
-        print(info["X-Request-Id"])
+        info = request.info().get("X-Request-Id")
+        print(info)

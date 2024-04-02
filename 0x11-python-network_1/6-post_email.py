@@ -3,4 +3,7 @@
 import requests
 import sys
 if __name__ == "__main__":
-    payload = {'email': sys.argv[1]}
+    url = sys.argv[1]
+    payload = {'email': url}
+    r = requests.get(url, params=payload)
+    print(r.text)
